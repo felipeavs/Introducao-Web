@@ -1,0 +1,14 @@
+body{
+  text-align: center;  
+}
+
+p{
+  border: 3px solid hotpink;
+  background-color:  lavenderblush;
+  text-align: left;
+  display: inline-block;
+}
+
+span{
+  background-color: yellow;
+}

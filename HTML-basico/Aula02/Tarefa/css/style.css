@@ -1,0 +1,29 @@
+body{
+  background-color: black;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+h1{
+  color: red;
+}
+
+h2{
+  color: white;
+  
+}
+
+ul{
+  margin-left: -40px;
+}
+
+li {
+  display: inline-block;
+  margin: 1px;
+}
+
+img {
+  width: 240px;
+  height: 330px;
+  border: 1px solid white
+}
