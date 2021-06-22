@@ -1,0 +1,27 @@
+header h1 {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+nav {
+  background-color: orange;
+  padding-bottom: 20px;
+}
+
+header h1, header h2 {
+  background-color: lightskyblue;
+}
+
+section {
+  text-align: center;
+  background-color: gray;
+  margin: auto 70px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+footer {
+  background-color: black;
+}
+
+
