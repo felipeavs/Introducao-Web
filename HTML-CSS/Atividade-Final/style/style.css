@@ -5,63 +5,71 @@ body {
     color: white;
 }
 
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
 
 /*BARRA DE NAVEGAÇÂO--------------------*/
-nav .menu-desktop{
+nav {
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+nav .menu-desktop .container{
     font-size: .875em;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(36, 36, 36);
-    color: white;
     font-family: 'Open Sans', sans-serif;
 }    
  #menu-hamburger {
-     display: none;
+    display: none;
  }
 
-
-
  @media (max-width: 700px) {
-     #links { 
-         display: none;
-     }
-     #menu-hamburger {
+    #links { 
+        display: none;
+    }
+    
+    #menu-hamburger {
         display: block;
         padding: 20px;
         font-size: 40px;
-     }
-     nav {
+    }
+
+    nav {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(36, 36, 36);
-        color: white;
     }
- }
+}
 
- #links a {
-     margin: 15px;
- }
+#links a {
+    margin: 15px;
+}
 
- #logo {
+#logo h1 {
     font-size: 2.5em;
     color: white;
     font-weight: bold; 
- }
+    margin: 0;
+}
 
 a.button {
-     padding: 10px 15px;
-     border: 2px solid aqua;
-     border-radius: 100px;
- }
+    padding: 10px 15px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+}
 
  /*FIM BARRA DE NAVEGAÇÂO--------------------*/
 
  /*HEADER -----------------------------------*/
 
 header {
-    background-color: grey;
+    background-color: black;
     height: 500px;
     position: relative;
     background-size: cover;
@@ -72,21 +80,16 @@ header {
     align-items: center;
     justify-content: center;
     background-image: url('../img/cover-teste.png');
+    mask-image: linear-gradient(to top, transparent 15%, black 80%);
     -webkit-mask-image: linear-gradient(to top, transparent 15%, black 80%);
 }
 
-header h1 {
+header h2 {
     font-weight: bold; 
     font-size: 60px;
     color: white;
     text-align: center;
     text-shadow: 2px 2px black;
-    
-    /*
-    background: -webkit-linear-gradient(tomato,rgb(124, 122, 122));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    */
 }
 
 @media (max-width: 700px) {
@@ -94,31 +97,27 @@ header h1 {
         height: 400px;
         line-height: 1.2;
     }
-    header h1 {
-        font-weight: bold; 
-        color: white;
+    header h2 {
         padding: 0;
-        text-align: center;
         font-size: 40px;
     }
 }
 
  /*FIM HEADER  ------------------------------*/
- section {
+#main {
     background:rgb(36, 36, 36);
-    margin: 0 125px;
-    position: relative;
-    bottom: 80px;
-    padding: 15px;
+    /*position: relative;
+    bottom: 80px;*/
+    margin-top: -80px;
     text-align: center;
     border-radius: 15px;
- }
+}
 
- section h1 {
-     padding: 0;
- }
+section h2 {
+    padding: 0;
+}
 
- @media (max-width: 700px) {
+@media (max-width: 700px) {
     section {
         margin: 0 15px;
     }
