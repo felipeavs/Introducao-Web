@@ -1,8 +1,15 @@
+:root{
+    --primaryDarkColor: rgb(12, 31, 49);
+    --primaryAsccentColor: aqua;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     color: white;
+    background-color: black;
 }
 
 .container {
@@ -14,7 +21,7 @@ body {
 
 /*BARRA DE NAVEGAÇÂO--------------------*/
 nav {
-    background-color: rgb(36, 36, 36);
+    background-color: var(--primaryDarkColor);
     color: white;
 }
 
@@ -51,45 +58,48 @@ nav .menu-desktop .container{
     margin: 15px;
 }
 
-#logo h1 {
+/*#logo h1 {
     font-size: 2.5em;
     color: white;
     font-weight: bold; 
     margin: 0;
+}*/
+
+.logo img {
+    max-width:120px;
+    width: auto;
 }
 
 a.button {
     padding: 10px 15px;
-    border: 2px solid aqua;
+    border: 2px solid var(--primaryAsccentColor);
     border-radius: 15px;
 }
 
- /*FIM BARRA DE NAVEGAÇÂO--------------------*/
 
  /*HEADER -----------------------------------*/
-
 header {
     background-color: black;
-    height: 500px;
-    position: relative;
+    height: calc(100vh - 91px);
     background-size: cover;
-    background-position: center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../img/cover-teste.png');
-    mask-image: linear-gradient(to top, transparent 15%, black 80%);
-    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 80%);
+    background-position: top;
+    background-image: url('../img/cover-05.png');
+    
 }
 
 header h2 {
-    font-weight: bold; 
-    font-size: 60px;
+    font-weight: bolder; 
+    font-size: 40px;
     color: white;
-    text-align: center;
-    text-shadow: 2px 2px black;
+    text-align: left;
+    margin: 0;
+    padding-top: calc(50vh - 91px);
+    max-width: 500px;
+    text-transform: uppercase;
+}
+
+header h2 span {
+    font-size: 75px;
 }
 
 @media (max-width: 700px) {
@@ -98,19 +108,29 @@ header h2 {
         line-height: 1.2;
     }
     header h2 {
-        padding: 0;
-        font-size: 40px;
+        font-size: 20px;
+        padding-top: calc(30vh - 91px);
+        max-width: 242px;
+        margin: auto;
+    }
+    header h2 span {
+        font-size: 37px;
     }
 }
 
- /*FIM HEADER  ------------------------------*/
-#main {
-    background:rgb(36, 36, 36);
+ /*Lboratório  ------------------------------*/
+.main {
+    background: var(--primaryDarkColor);
     /*position: relative;
     bottom: 80px;*/
-    margin-top: -80px;
+    margin-top: -126px;
     text-align: center;
     border-radius: 15px;
+    padding: 40px 60px;
+}
+
+.main h2 {
+    font-size: 2em;
 }
 
 section h2 {
@@ -121,4 +141,46 @@ section h2 {
     section {
         margin: 0 15px;
     }
+
+    .main {
+        padding: 5px 20px;
+    }
 }
+
+/*Pessoas  ------------------------------*/
+
+
+/*Footer  ------------------------------*/
+footer {
+    background-color: var(--primaryDarkColor);
+    margin-top: 30px;
+    
+
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social i {
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+@media (max-width: 700px) {
+    .social i {
+        padding: 0 10px;
+        font-size: 20px;
+    }
+}
+
+
