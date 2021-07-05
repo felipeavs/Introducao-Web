@@ -147,7 +147,26 @@ section h2 {
     }
 }
 
-/*Pessoas  ------------------------------*/
+/*valores  ------------------------------*/
+.valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.valor {
+    max-width:300px;
+    width: auto;
+}
+
+.valor img {
+    max-width:200px;
+    width: auto;
+    border-radius: 100%;
+}
 
 
 /*Footer  ------------------------------*/
