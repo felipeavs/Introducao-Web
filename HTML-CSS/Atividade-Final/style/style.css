@@ -3,11 +3,14 @@
     --primaryAsccentColor: aqua;
 }
 
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
     color: white;
     background-color: black;
 }
@@ -33,37 +36,14 @@ nav .menu-desktop .container{
     align-items: center;
     font-family: 'Open Sans', sans-serif;
 }    
- #menu-hamburger {
+#menu-hamburger {
     display: none;
- }
-
- @media (max-width: 700px) {
-    #links { 
-        display: none;
-    }
-    
-    #menu-hamburger {
-        display: block;
-        padding: 20px;
-        font-size: 40px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
 }
+
 
 #links a {
     margin: 15px;
 }
-
-/*#logo h1 {
-    font-size: 2.5em;
-    color: white;
-    font-weight: bold; 
-    margin: 0;
-}*/
 
 .logo img {
     max-width:120px;
@@ -74,6 +54,13 @@ a.button {
     padding: 10px 15px;
     border: 2px solid var(--primaryAsccentColor);
     border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -102,7 +89,243 @@ header h2 span {
     font-size: 75px;
 }
 
+
+ /*Lboratório  ------------------------------*/
+main {
+    background: var(--primaryDarkColor);
+    margin-top: -126px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 40px 60px;
+    box-shadow: 0.01em 0.01em 1em rgba(238, 130, 238, 0.295);
+}
+
+main h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+section h2 {
+    padding: 0;
+}
+
+/*valores  ---------------------------------------------------------------------------------------------------------------*/
+.valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0.01em 0.01em 1em rgba(238, 130, 238, 0.295);
+
+}
+
+.valor {
+    
+    background-color: var(--primaryDarkColor);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 10px;
+    width: 300px;
+}
+
+.valor i {
+    
+    font-size: 60px;
+    margin-left: 35px;
+    color: rgba(0, 255, 255, 0.397);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.valor .descricao {
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 15px;
+
+    height: 300px;
+    margin-top: 20px;
+    max-width: 151px;
+    min-width: 150px;
+    
+}
+
+.valor .descricao:hover {
+    box-shadow: 0.01em 0.01em 1em rgba(238, 130, 238, 0.295);
+}
+
+section {
+    padding: 50px 0;
+    margin: 25px 0;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/*Pessoas  --------------------------------------------------------------------------------------------------------------*/
+.professor img{
+    border-radius: 100%;
+    max-width: 250px;
+}
+
+.professor{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.aluno img{
+    border-radius: 100%;
+    max-width: 150px;
+}
+
+.aluno{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.pessoas {
+    box-shadow: 0.01em 0.01em 1em rgba(238, 130, 238, 0.295);    
+}
+
+
+
+/*Projetos  -----------------------------------------------------------------------------------------*/
+.projetos{
+    box-shadow: 0.01em 0.01em 1em rgba(238, 130, 238, 0.295); 
+    border-radius: 15px;
+    padding: 5px 0px;
+}
+.projeto {
+    margin: 30px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    justify-content: space-around;
+    background-color: var(--primaryDarkColor);    
+}
+
+.projeto .texto {
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.projeto img {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+/*Formulario  ----------------------------------------------------------------------------------------*/
+form {
+    margin: auto;
+    margin-bottom: 100px;
+    background-color:var(--primaryDarkColor);
+    padding: 20px 40px 60px 40px;
+    border-radius: 15px;
+    box-shadow: 0.01em 0.01em 1em rgba(238, 130, 238, 0.295);
+}
+
+input, label, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    float: right;
+    padding: 8px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: var(--primaryAsccentColor);
+    background-color: transparent;
+    border: 2px solid var(--primaryAsccentColor);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size: 18px;
+
+}
+
+button[type="submit"]:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: var(--primaryAsccentColor);
+    color: var(--primaryDarkColor);
+}
+
+/*Footer  ------------------------------*/
+footer {
+    background-color: var(--primaryDarkColor);
+    margin-top: 30px;
+    padding: 40px 0;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    line-height: 24px;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social i {
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+.social a {
+    color: white;
+}
+
+
+
+
 @media (max-width: 700px) {
+    
+    #links { 
+        display: none;
+    }
+    
+    #menu-hamburger {
+        display: block;
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
     header {
         height: 400px;
         line-height: 1.2;
@@ -116,90 +339,36 @@ header h2 span {
     header h2 span {
         font-size: 37px;
     }
-}
 
- /*Lboratório  ------------------------------*/
-.main {
-    background: var(--primaryDarkColor);
-    /*position: relative;
-    bottom: 80px;*/
-    margin-top: -126px;
-    text-align: center;
-    border-radius: 15px;
-    padding: 40px 60px;
-}
-
-.main h2 {
-    font-size: 2em;
-}
-
-section h2 {
-    padding: 0;
-}
-
-@media (max-width: 700px) {
     section {
         margin: 0 15px;
     }
 
-    .main {
+    main {
         padding: 5px 20px;
     }
-}
+    .valores {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
 
-/*valores  ------------------------------*/
-.valores {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    padding: 30px;
-
-}
-
-.valor {
-    max-width:300px;
-    width: auto;
-}
-
-.valor img {
-    max-width:200px;
-    width: auto;
-    border-radius: 100%;
-}
-
-
-/*Footer  ------------------------------*/
-footer {
-    background-color: var(--primaryDarkColor);
-    margin-top: 30px;
-    
-
-}
-
-.address{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
-}
-
-.social {
-    margin-top: 10px;
-}
-
-.social i {
-    padding: 0 20px;
-    font-size: 30px;
-}
-
-@media (max-width: 700px) {
     .social i {
         padding: 0 10px;
         font-size: 20px;
     }
+
+    .projeto {
+        flex-wrap: wrap;
+    }
+
+    .projeto .texto{
+        font-size: 10px;
+    }
+
+    .projeto img {
+        max-width: 150px;
+        border-radius: 15px;
+        
+    }
 }
-
-
