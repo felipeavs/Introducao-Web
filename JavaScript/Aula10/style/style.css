@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: rgb(252, 250, 251);
+}
+
+main {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  right: 80px;
+  padding: 15px;
+  background-color: cadetblue;
+  border-radius: 100%;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+p {
+  display: block;
+  max-width: 200px;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  right: 50px;
+  border-radius: 100%;
+  background-color: peachpuff;
+  margin-top: 20px;
+  color: salmon;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+img {
+  display: block;
+  max-width: 400px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}

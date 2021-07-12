@@ -1,45 +1,45 @@
 body {
-    font-family: sans-serif;
-    background-color: silver;
-    height: 100vh;
+  font-family: sans-serif;
+  background-color: silver;
+  height: 100vh;
 }
 
 main {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 img {
-    display: block;
-    height: 300px;
-    width: 300px;
-    margin: auto;
-    
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+
 }
 
 button {
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    height: 60px;
-    width: 150px;
-    font-size: 20px;
-    border-radius: 100px;
-    background-color: lightgreen;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  height: 60px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 100px;
+  background-color: lightgreen;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 button:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 body.body-off {
-    background-color: white;
+  background-color: white;
 }
 
 button.button-off {
-    background-color: tomato;
+  background-color: tomato;
 }
