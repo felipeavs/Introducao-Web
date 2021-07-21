@@ -1,0 +1,17 @@
+{
+    "name": "Atividade 12 Extensao",
+    "version": "1.0",
+    "description": "Extensao para alterar tag img",
+    "content_scripts": [
+        {
+            "matches": ["*://*.br/*", "*://*.com.br/*"],
+            "js": ["pages.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "manifest_version": 2
+}
