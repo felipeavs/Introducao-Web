@@ -1,7 +1,7 @@
 {
-    "name": "Atividade 12 Extensao",
+    "name": "ImagensBR",
     "version": "1.0",
-    "description": "Extensao para alterar tag img",
+    "description": "Extensao para contar e alterar as imagens",
     "content_scripts": [
         {
             "matches": ["*://*.br/*", "*://*.com.br/*"],
