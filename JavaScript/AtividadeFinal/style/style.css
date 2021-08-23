@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    text-align: center;
+    background-color: yellow;
+}
+
+.img-logo{
+    width: 500px;
+    margin: 10px;
+}
+
+
+.imagem-pokemon{
+    width: 250px;
+}
+
+.button-pokemon{
+    padding: 4px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 4px;
+    color: black;
+    border: 2px solid red;
+   
+}
+
+.button-pokemon:hover{
+    background-color:#2a75bb;
+    color:white;
+}
+
+#pokemon-list{
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 200px 200px;
+    
+}
+
+
+
+#pokemon-info{
+    background-color: red;
+    padding: 20px;
+    border-radius: 200px 200px 0 0;
+    color: white;
+    display: flex;
+    text-align:left;
+    justify-content: space-around;
+}
+
+.faixa {
+    background-color: black;
+    
+}
+
+
+
+.text  h3{
+
+    margin: 0;
+    padding: 15px;
+    display: inline;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid black;
+}
+
+ul {
+    list-style-type: none;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    font-size: 1.5em;
+    width:350px; /* or whatever width you want. */
+    max-width:350px; /* or whatever width you want. */
+    display: inline-block;
+    color: black;
+    
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+
+  
